@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonynous">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./styles/index.css">
+  <link 
+    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+    rel="stylesheet"  
+    type='text/css'
+  >
+  <script 
+    src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous">
+  </script>
+  
+  <title>Frontend Mentor | Photosnap Website Challenge</title>
+
+</head>
+<body>
+
+  <header class="index__header">
+
+    <a href="index.html" class="header__branding">
+      <img class="logo" src="./assets/photosnap-logo.svg"><img src="./assets/photosnap-black.svg">
+    </a>
+    
+    <ul class="header__nav">
+      <a href="stories.html" class="nav__item">Stories</a>
+      <a href="features.html" class="nav__item">Features</a>
+      <a href="pricing.html" class="nav__item">Pricing</a>
+    </ul>
+
+    <button class="header__button">Get an invite</button>
+
+    <div class="header__menuBtn">
+      <span id="lineOne" class="menuBtn__line"></span>
+      <span id="lineTwo" class="menuBtn__line"></span>
+    </div>
+
+    <div class="header__menuContainer">
+      <ul class="menuContainer__nav">
+        <a href="stories.html" class="nav__item">Stories</a>
+        <a href="features.html" class="nav__item">Features</a>
+        <a href="pricing.html" class="nav__item">Pricing</a>
+      </ul>
+      <button class="menuContainer__button">Get an invite</button>
+    </div>
+
+  </header>
+
+  <div class="index__container index__topContainer">
+
+    <div class="topContainer__left">
+      <div class="container__info topContainer__info">
+        <h1 class="info__header">Create and share your photo Stories.</h1>
+        <p class="info__desc">Photosnap is a platform for photographers and visual storytellers. We make it 
+        easy to share photos, tell stories and connect with others.</p>
+        <a href="#" class="info__btn">Get an invite<img class="btn__arrow" src="./assets/arrow.svg"></a>
+      </div>
+    </div>
+
+    <div class="topContainer__right">
+      <img src="./assets/home/desktop/create-and-share.jpg" alt="Create and Share" />
+    </div>
+
+  </div>
+
+  <div class="index__container index__midContainer">
+
+    <div class="midContainer__left">
+      <img src="./assets/home/desktop/beautiful-stories.jpg" alt="Beautiful stories" />
+    </div>
+
+    <div class="midContainer__right">
+      <div class="container__info midContainer__info">
+        <h1 class="info__header">Beautiful stories every time</h1>
+        <p class="info__desc">We provide design templates to ensure your stories look terrific. Easily add 
+          photos, text, embed maps and media from other networks. Then share your story 
+          with everyone.</p>
+        <a href="#" class="info__btn">View the stories<img class="btn__arrow" src="./assets/arrow-black.svg"></a>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="index__container index__lowContainer">
+
+    <div class="lowContainer__left">
+      <div class="container__info lowContainer__info">
+        <h1 class="info__header">Designed for everyone</h1>
+        <p class="info__desc">Photosnap can help you create stories that resonate with your audience.  Our 
+          tool is designed for photographers of all levels, brands, businesses you name it. </p>
+        <a href="#" class="info__btn">View the stories<img class="btn__arrow" src="./assets/arrow-black.svg"></a>
+      </div>
+    </div>
+
+    <div class="lowContainer__right">
+      <img src="./assets/home/desktop/designed-for-everyone.jpg" alt="Designed for everyone" />
+    </div>
+    
+  </div>
+
+  <div class="index__stories">
+
+    <div class="stories__story">
+      <img class="story__img" src="assets/stories/desktop/mountains.jpg">
+      <div class="story__shadow">
+        <div class="story__info">
+          <h3>The Mountains</h3>
+          <p>by John Appleseed</p>
+          <a>Read story<img class="btn__arrow" src="./assets/arrow.svg"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="stories__story">
+      <img class="story__img" src="assets/stories/desktop/cityscapes.jpg">
+      <div class="story__shadow">
+        <div class="story__info">
+          <h3>Sunset Cityscapes</h3>
+          <p>by Benjamin Cruz</p>
+          <a>Read story<img class="btn__arrow" src="./assets/arrow.svg"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="stories__story">
+      <img class="story__img" src="assets/stories/desktop/18-days-voyage.jpg">
+      <div class="story__shadow">
+        <div class="story__info">
+          <h3>18 Days Voyage</h3>
+          <p>by Alexei Borodin</p>
+          <a>Read story<img class="btn__arrow" src="./assets/arrow.svg"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="stories__story">
+      <img class="story__img" src="assets/stories/desktop/architecturals.jpg">
+      <div class="story__shadow">
+        <div class="story__info">
+          <h3>Architecturals</h3>
+          <p>by Samantha Brooke</p>
+          <a>Read story<img class="btn__arrow" src="./assets/arrow.svg"></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="index__bottomContainer">
+
+    <div class="bottomContainer__item">
+      <div class="item__image">
+        <img src="./assets/features/desktop/responsive.svg">
+      </div>
+      <div class="item__text">
+        <h4>100% Responsive</h4>
+        <p>No matter which the device you’re on, our site is fully responsive and stories 
+          look beautiful on any screen.</p>
+      </div>
+    </div>
+
+    <div class="bottomContainer__item">
+      <div class="item__image">
+        <img src="./assets/features/desktop/no-limit.svg">
+      </div>
+      <div class="item__text">
+        <h4>No Photo Upload Limit</h4>
+        <p>Our tool has no limits on uploads or bandwidth. Freely upload in bulk and 
+          share all of your stories in one go.</p>
+      </div>
+    </div>
+
+    <div class="bottomContainer__item">
+      <div class="item__image">
+        <img src="./assets/features/desktop/embed.svg">
+      </div>
+      <div class="item__text">
+        <h4>Available to Embed</h4>
+        <p>Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, 
+          Google Maps, and more. </p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+
+    <div class="footer__left">
+
+      <div class="left__container">
+        <div class="footer__branding">
+          <img class="logo" src="./assets/photosnap-logo.svg"><img src="./assets/photosnap.svg">
+        </div>
+        <div class="footer__socials">
+          <img src="./assets/shared/desktop/facebook.svg">
+          <img src="./assets/shared/desktop/youtube.svg">
+          <img src="./assets/shared/desktop/twitter.svg">
+          <img src="./assets/shared/desktop/pinterest.svg">
+          <img src="./assets/shared/desktop/instagram.svg">
+        </div>
+      </div>
+      
+      <nav class="footer__nav">
+        <a href="index.html">Home</a>
+        <a href="stories.html">Stories</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+      </nav>
+
+    </div>
+
+    
+
+    <div class="footer__right">
+      <a class="info__btn">Get an invite<img class="btn__arrow" src="./assets/arrow.svg"></a>
+      <p>Copyright 2021. All Rights Reserved</p>
+    </div>
+
+  </footer>
+
+
+  <script>
+
+    $(menu).ready(() => {
+
+      let menu = $('.header__menuContainer')
+
+      $(menu).on('resize', () => {
+
+        if ($(menu.width() < 720)) {
+          menu.css('display', 'none')
+        }
+
+      })
+
+      $(window).on('resize', () => {
+
+        if ($(window.width()) < 768) {
+          $('.left__container').append($('.footer__nav'))
+        }
+
+      })
+
+      $('.header__menuBtn').click(() => {
+        
+        if (menu.css('display') === 'none') {
+          menu.show()
+          $('#lineOne').css('transform', 'rotate(-45deg) translateY(3px)')
+          $('#lineTwo').css('transform', 'rotate(45deg) translateY(-3px)')
+        } else {
+          menu.hide()
+          $('#lineOne').css('transform', 'rotate(0deg) translateY(0)')
+          $('#lineTwo').css('transform', 'rotate(0deg) translateY(0)')
+        }
+      })
+
+    })
+
+  </script>
+
+</body>
+
+</html>

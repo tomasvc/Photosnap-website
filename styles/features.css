@@ -1,0 +1,91 @@
+.hero {
+    display: flex;
+    max-height: 490px;
+    width: 100vw;
+}
+
+.hero__heroLeft {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
+
+.hero__heroLeft::before {
+    content: '';
+    position: absolute;
+    top: 140px;
+    left: 0;
+    width: 6px;
+    height: 220px;
+    background: linear-gradient(3deg, #FFC593, #BC7198,#5A77FF);
+}
+
+.hero__heroRight {
+    overflow: hidden;
+}
+
+.hero__heroRight img {
+    transform: translateX(-150px);
+}
+
+.bottomContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.bottomContainer__item {
+    padding: 3rem;
+    max-width: 300px;
+}
+
+.beta {
+    box-sizing: border-box;
+    background: url('../assets/shared/desktop/bg-beta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    position: repeat;
+}
+
+.beta::before {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 10;
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(3deg, #FFC593, #BC7198,#5A77FF)
+}
+
+.beta__invite {
+    font-size: 40px;
+    max-width: 400px;
+}
+
+.beta__btn {
+    background: none;
+    min-width: 168px;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .hero__heroRight {
+        max-width: 273px;
+        width: 100%;
+    }
+
+    .hero__heroRight img {
+        max-height: 100%;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./styles/index.css">
+  <link rel="stylesheet" type="text/css" href="./styles/features.css">
+  <link rel="stylesheet" type="text/css" href="./styles/pricing.css">
+  <link 
+    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+    rel="stylesheet"  
+    type='text/css'
+  >
+  <script 
+    src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous">
+  </script>
+  
+  <title>Frontend Mentor | Photosnap Website Challenge</title>
+</head>
+<body>
+
+  <header class="index__header">
+
+    <a href="index.html" class="header__branding">
+      <img class="logo" src="./assets/photosnap-logo.svg"><img src="./assets/photosnap-black.svg">
+    </a>
+    
+    <ul class="header__nav">
+      <a href="stories.html" class="nav__item">Stories</a>
+      <a href="features.html" class="nav__item">Features</a>
+      <a href="pricing.html" class="nav__item">Pricing</a>
+    </ul>
+
+    <button class="header__button">Get an invite</button>
+
+    <div class="header__menuBtn">
+      <span id="lineOne" class="menuBtn__line"></span>
+      <span id="lineTwo" class="menuBtn__line"></span>
+    </div>
+
+    <div class="header__menuContainer">
+      <ul class="menuContainer__nav">
+        <a href="stories.html" class="nav__item">Stories</a>
+        <a href="features.html" class="nav__item">Features</a>
+        <a href="pricing.html" class="nav__item">Pricing</a>
+      </ul>
+      <button class="menuContainer__button">Get an invite</button>
+    </div>
+
+  </header>
+
+  <div class="hero">
+
+    <div class="hero__heroLeft">
+      <div class="container__info heroLeft__info">
+        <h1 class="info__header">Pricing</h1>
+        <p class="info__desc">Create a your stories, Photosnap is a platform for photographers and visual storytellers. 
+          It’s the simple way to create and share your photos.</p>
+        <a href="#" class="info__btn">Get an invite<img class="btn__arrow" src="./assets/arrow.svg"></a>
+      </div>
+    </div>
+  
+    <div class="hero__heroRight">
+      <img class="heroRight__pricingImg" src="./assets/pricing/desktop/hero.jpg" alt="Pricing" />
+    </div>
+
+  </div>
+
+  <div class="switch">
+    <p id="switch__monthly" class="switch__duration">Monthly</p>
+    <div class="switch__main">
+      <span class="main__toggle"></span>
+    </div>
+    <p id="switch__yearly" class="switch__duration">Yearly</p>
+  </div>
+
+  <div class="plan">
+
+    <div id="plan__basic" class="plan__item">
+      <h3 class="item__name">Basic</h3>
+      <p class="item__description">Includes basic usage of our platform. Recommended for new and aspiring photographers.</p>
+      <div class="plan__price">
+        <h1 id="price__basic" class="price__amount">$19.00</h1>
+        <p class="price__duration">per month</p>
+      </div>
+      <button class="plan__btn">Pick plan</button>
+    </div>
+
+    <div id="plan__pro" class="plan__item">
+      <h3 class="item__name">Pro</h3>
+      <p class="item__description">More advanced features available. Recommended for photography veterans and professionals.</p>
+      <div class="plan__price">
+        <h1 id="price__pro" class="price__amount">$39.00</h1>
+        <p class="price__duration">per month</p>
+      </div>
+      <button class="plan__btn">Pick plan</button>
+    </div>
+
+    <div id="plan__business" class="plan__item">
+      <h3 class="item__name">Business</h3>
+      <p class="item__description">Additional features available such as more detailed metrics. Recommended for business owners.</p>
+      <div class="plan__price">
+        <h1 id="price__business" class="price__amount">$99.00</h1>
+        <p class="price__duration">per month</p>
+      </div>
+      <button class="plan__btn">Pick plan</button>
+    </div>
+
+  </div>
+
+  <div class="table">
+
+    <h1 class="table__heading">Compare</h1>
+
+    <table class="table__table">
+      <tr class="table__row table__topRow">
+        <th class="table__heading table__left">The features</th>
+        <div class="table__rowData">
+          <th class="table__heading">Basic</th>
+          <th class="table__heading">Pro</th>
+          <th class="table__heading">Business</th>
+        </div>
+      </tr>
+      <tr class="table__row">
+        <td class="table__left">Unlimited story posting</td>
+        <td><img src="./assets/pricing/desktop/check.svg"></td>
+        <td><img src="./assets/pricing/desktop/check.svg"></td>
+        <td><img src="./assets/pricing/desktop/check.svg"></td>
+      </tr>
+      <tr class="table__row">
+        <td class="table__left">Unlimited photo upload</td>
+        <td><img src="./assets/pricing/desktop/check.svg"></td>
+        <td><img src="./assets/pricing/desktop/check.svg"></td>
+        <td><img src="./assets/pricing/desktop/check.svg"></td>
+      </tr>
+      <tr class="table__row">
+        <td class="table__left">Embedding custom content</td>
+        <td></td>
+        <td><img src="./assets/pricing/desktop/check.svg"></td>
+        <td><img src="./assets/pricing/desktop/check.svg"></td>
+      </tr>
+      <tr class="table__row">
+        <td class="table__left">Customize metadata</td>
+        <td></td>
+        <td><img src="./assets/pricing/desktop/check.svg"></td>
+        <td><img src="./assets/pricing/desktop/check.svg"></td>
+      </tr>
+      <tr class="table__row">
+        <td class="table__left">Advanced metrics</td>
+        <td></td>
+        <td></td>
+        <td><img src="./assets/pricing/desktop/check.svg"></td>
+      </tr>
+      <tr class="table__row">
+        <td class="table__left">Photo downloads</td>
+        <td></td>
+        <td></td>
+        <td><img src="./assets/pricing/desktop/check.svg"></td>
+      </tr>
+      <tr class="table__row">
+        <td class="table__left">Search engine indexing</td>
+        <td></td>
+        <td></td>
+        <td><img src="./assets/pricing/desktop/check.svg"></td>
+      </tr>
+      <tr class="table__row">
+        <td class="table__left">Custom analytics</td>
+        <td></td>
+        <td></td>
+        <td><img src="./assets/pricing/desktop/check.svg"></td>
+      </tr>
+    </table>
+
+  </div>
+
+  <div class="beta">
+    <h1 class="beta__invite">We're in Beta. Get your invite today!</h1>
+    <a class="info__btn beta__btn">Get an invite<img class="btn__arrow" src="./assets/arrow.svg"></a>
+  </div>
+
+  <footer class="footer">
+
+    <div class="footer__left">
+
+      <div class="left__container">
+        <div class="footer__branding">
+          <img class="logo" src="./assets/photosnap-logo.svg"><img src="./assets/photosnap.svg">
+        </div>
+        <div class="footer__socials">
+          <img src="./assets/shared/desktop/facebook.svg">
+          <img src="./assets/shared/desktop/youtube.svg">
+          <img src="./assets/shared/desktop/twitter.svg">
+          <img src="./assets/shared/desktop/pinterest.svg">
+          <img src="./assets/shared/desktop/instagram.svg">
+        </div>
+      </div>
+      
+      <nav class="footer__nav">
+        <a href="index.html">Home</a>
+        <a href="stories.html">Stories</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+      </nav>
+
+    </div>
+
+    <div class="footer__right">
+      <a class="info__btn">Get an invite<img class="btn__arrow" src="./assets/arrow.svg"></a>
+      <p>Copyright 2021. All Rights Reserved</p>
+    </div>
+
+  </footer>
+
+  <script>
+
+    $(document).ready(() => {
+
+      $('.switch__main').on('click', () => {
+
+        if ($('.main__toggle').css('left') === '5px') {
+
+          $('.main__toggle').css({
+            'left': '36px',
+            'backgroundColor': '#fff'
+          })
+
+          $('.switch__main').css('backgroundColor', '#000')
+          $('#switch__monthly').css('opacity', 0.5)
+          $('#switch__yearly').css('opacity', 1)
+
+          $('#price__basic').text('$190.00')
+          $('#price__pro').text('$390.00')
+          $('#price__business').text('$990.00')
+
+
+        } else {
+
+          $('.main__toggle').css({
+            'left': '5px',
+            'backgroundColor': '#000'
+          })
+
+          $('.switch__main').css('backgroundColor', '#dfdfdf')
+          $('#switch__monthly').css('opacity', 1)
+          $('#switch__yearly').css('opacity', 0.5)
+
+          $('#price__basic').text('$19.00')
+          $('#price__pro').text('$39.00')
+          $('#price__business').text('$99.00')
+
+        }
+      })
+
+    })
+
+  </script>
+</body>
+</html>

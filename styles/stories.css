@@ -1,0 +1,53 @@
+.stories__hero {
+  background-image: url("../assets/stories/desktop/moon-of-appalacia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+}
+
+.hero__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  margin-left: 10%;
+  height: inherit;
+}
+
+.hero__info div {
+  display: flex;
+}
+
+.hero__info div p:last-child {
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.hero__infoBtn {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 20px;
+  display: flex;
+  padding: 20px 0;
+}
+
+.hero__infoBtn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.stories__stories {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 400px) {
+
+  
+
+}
