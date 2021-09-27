@@ -184,30 +184,39 @@
 
     $(document).ready(() => {
 
-      let menu = $('.header__menuContainer')
+    let menu = $('.header__menuContainer')
 
+    $(menu).on('resize', () => {
 
-      $(menu).on('resize', () => {
-        console.log($(menu).width())
-        if ($(menu.width() > 400)) {
-          
-          menu.css('display', 'none')
-        }
-      })
+      if ($(menu.width() < 720)) {
+        menu.css('display', 'none')
+      }
 
-      $('.header__menuBtn').click(() => {
-        
-        if (menu.css('display') === 'none') {
-          menu.show()
-          $('#lineOne').css('transform', 'rotate(-45deg) translateY(3px)')
-          $('#lineTwo').css('transform', 'rotate(45deg) translateY(-3px)')
-        } else {
-          menu.hide()
-          $('#lineOne').css('transform', 'rotate(0deg) translateY(0)')
-          $('#lineTwo').css('transform', 'rotate(0deg) translateY(0)')
-        }
+    })
 
-      })
+    $(window).on('resize', () => {
+
+      if ($(window).width() < 768) {
+        $('.left__container').append($('.footer__nav'))
+      }
+
+    })
+
+    $('.header__menuBtn').on('click', () => {
+      
+      if (menu.css('display') === 'none') {
+        //menu.show()
+        menu.css('display', 'block')
+        $('#lineOne').css('transform', 'rotate(-45deg) translateY(3px)')
+        $('#lineTwo').css('transform', 'rotate(45deg) translateY(-3px)')
+      } else {
+        //menu.hide()
+        menu.css('display', 'none')
+        $('#lineOne').css('transform', 'rotate(0deg) translateY(0)')
+        $('#lineTwo').css('transform', 'rotate(0deg) translateY(0)')
+      }
+
+    })
 
     })
 
