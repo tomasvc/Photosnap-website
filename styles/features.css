@@ -17,10 +17,10 @@
 .hero__heroLeft::before {
     content: '';
     position: absolute;
-    top: 140px;
+    top: 130px;
     left: 0;
     width: 6px;
-    height: 220px;
+    height: 50%;
     background: linear-gradient(3deg, #FFC593, #BC7198,#5A77FF);
 }
 
@@ -53,12 +53,12 @@
     display: flex;
     justify-content: space-between;
     padding: 4rem;
-    position: repeat;
+    position: relative;
 }
 
 .beta::before {
     position: absolute;
-    top: 20px;
+    top: 0;
     left: 0;
     z-index: 10;
     content: '';

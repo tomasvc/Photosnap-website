@@ -229,7 +229,7 @@
 
   <script>
 
-    $(menu).ready(() => {
+    $(document).ready(() => {
 
       let menu = $('.header__menuContainer')
 
@@ -243,23 +243,26 @@
 
       $(window).on('resize', () => {
 
-        if ($(window.width()) < 768) {
+        if ($(window).width() < 768) {
           $('.left__container').append($('.footer__nav'))
         }
 
       })
 
-      $('.header__menuBtn').click(() => {
+      $('.header__menuBtn').on('click', () => {
         
         if (menu.css('display') === 'none') {
-          menu.show()
+          //menu.show()
+          menu.css('display', 'block')
           $('#lineOne').css('transform', 'rotate(-45deg) translateY(3px)')
           $('#lineTwo').css('transform', 'rotate(45deg) translateY(-3px)')
         } else {
-          menu.hide()
+          //menu.hide()
+          menu.css('display', 'none')
           $('#lineOne').css('transform', 'rotate(0deg) translateY(0)')
           $('#lineTwo').css('transform', 'rotate(0deg) translateY(0)')
         }
+
       })
 
     })
